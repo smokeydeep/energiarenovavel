@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Energias Renováveis e Não Renováveis</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:
+linear-gradient(
+180deg,
+#7ee4ff 0%,
+#3cb7ff 50%,
+#0077dd 100%
+);
+
+color:white;
+
+overflow-x:hidden;
+}
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+radial-gradient(circle at top left,
+rgba(255,255,255,.35),
+transparent 30%),
+
+radial-gradient(circle at top right,
+rgba(255,255,255,.25),
+transparent 35%),
+
+radial-gradient(circle at bottom,
+rgba(0,255,150,.12),
+transparent 40%);
+
+pointer-events:none;
+}
+
+section{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:60px 25px;
+}
+
+.hero{
+
+background:
+linear-gradient(
+rgba(0,80,140,.25),
+rgba(0,80,140,.45)
+),
+url("oceano.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+.container{
+
+max-width:1100px;
+
+width:100%;
+
+text-align:center;
+}
+
+.titulo-fundo{
+
+position:absolute;
+
+font-size:clamp(4rem,12vw,10rem);
+
+font-weight:700;
+
+color:rgba(255,255,255,.08);
+
+pointer-events:none;
+}
+
+h1{
+
+font-size:clamp(3rem,7vw,6rem);
+
+margin-bottom:20px;
+
+text-shadow:
+0 0 20px rgba(255,255,255,.5);
+}
+
+h2{
+
+font-size:clamp(2rem,5vw,4rem);
+
+margin-bottom:25px;
+}
+
+p{
+
+font-size:1.1rem;
+
+line-height:1.8;
+}
+
+.card{
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.3);
+
+border-radius:25px;
+
+padding:35px;
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+margin-top:25px;
+}
+
+.caixa{
+
+background:rgba(255,255,255,.15);
+
+padding:20px;
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.3);
+}
+
+.renovavel{
+box-shadow:0 0 20px rgba(0,255,120,.35);
+}
+
+.naorenovavel{
+box-shadow:0 0 20px rgba(255,140,0,.35);
+}
+
+.verde{
+color:#00ff88;
+}
+
+.laranja{
+color:#ffd36b;
+}
+
+table{
+width:100%;
+margin-top:25px;
+border-collapse:collapse;
+}
+
+th,td{
+padding:15px;
+border:1px solid rgba(255,255,255,.3);
+}
+
+footer{
+padding:50px;
+text-align:center;
+background:rgba(255,255,255,.1);
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<h1>ENERGIAS RENOVÁVEIS E NÃO RENOVÁVEIS</h1>
+
+<p>
+Conheça algumas das principais fontes de energia utilizadas atualmente e seus impactos no meio ambiente.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="card">
+
+<h2 class="verde">Energias Renováveis</h2>
+
+<div class="grid">
+
+<div class="caixa renovavel">
+
+<h3>Energia Solar</h3>
+
+<p>
+A energia solar utiliza a luz do Sol para gerar eletricidade através de painéis solares.
+</p>
+
+</div>
+
+<div class="caixa renovavel">
+
+<h3>Energia Eólica</h3>
+
+<p>
+A energia eólica é produzida pela força dos ventos que movimentam grandes turbinas.
+</p>
+
+</div>
+
+<div class="caixa renovavel">
+
+<h3>Energia Hidrelétrica</h3>
+
+<p>
+A energia hidrelétrica é gerada pelo movimento da água em rios e represas.
+</p>
+
+</div>
+
+<div class="caixa renovavel">
+
+<h3>Biomassa</h3>
+
+<p>
+A biomassa utiliza matéria orgânica, como restos vegetais, para produzir energia.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<div class="container">
+
+<div class="card">
+
+<h2 class="laranja">Energias Não Renováveis</h2>
+
+<div class="grid">
+
+<div class="caixa naorenovavel">
+
+<h3>Petróleo</h3>
+
+<p>
+O petróleo é uma das fontes de energia mais utilizadas no mundo e também é usado na fabricação de diversos produtos.
+</p>
+
+</div>
+
+<div class="caixa naorenovavel">
+
+<h3>Carvão Mineral</h3>
+
+<p>
+O carvão mineral é utilizado principalmente na geração de energia e em atividades industriais.
+</p>
+
+</div>
+
+<div class="caixa naorenovavel">
+
+<h3>Gás Natural</h3>
+
+<p>
+O gás natural é um combustível fóssil utilizado em residências, indústrias e usinas elétricas.
+</p>
+
+</div>
+
+<div class="caixa naorenovavel">
+
+<h3>Energia Nuclear</h3>
+
+<p>
+A energia nuclear produz grande quantidade de eletricidade, mas gera resíduos radioativos.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Comparação</h2>
+
+<p>
+As energias renováveis e não renováveis possuem características diferentes e impactos distintos para a sociedade e o meio ambiente.
+</p>
+
+<table>
+
+<tr>
+<th>Renováveis</th>
+<th>Não Renováveis</th>
+</tr>
+
+<tr>
+<td>Recursos naturais renováveis</td>
+<td>Recursos limitados</td>
+</tr>
+
+<tr>
+<td>Menor emissão de poluentes</td>
+<td>Maior emissão de poluentes</td>
+</tr>
+
+<tr>
+<td>Mais sustentáveis</td>
+<td>Maior impacto ambiental</td>
+</tr>
+
+<tr>
+<td>Importantes para o futuro energético</td>
+<td>Dependem de reservas finitas</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Créditos</h2>
+
+<p>
+
+<strong>Participantes</strong>
+
+<br><br>
+
+Juan<br>
+Davi Melo<br>
+Davi Conceição<br>
+Mariana<br>
+Daniel<br>
+Mateus
+
+<br><br>
+
+<strong>Idealizador:</strong> Juan
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+Projeto desenvolvido para a disciplina de Geografia.
+
+<br><br>
+
+Desenvolvido por Juan
+
+</footer>
+
+</body>
+</html>
